@@ -390,7 +390,7 @@ Spark 시제품은 foreachBatch에서 이벤트의 종류·버전·필수 ID를 
 
 위 검증 집합은 일부 겹칩니다. 합산해 전체 적재 건수로 사용하지 않습니다. 두 대 동시 시험은 해당 시나리오의 저장 성공을 검증한 결과입니다.
 
-[검증 방법·수치·한계](docs/verification.md)
+[검증 방법·수치·한계](docs/verification.md) · [Kafka 수신 캡처](server/README.md#kafka-수신-확인)
 
 ## 역할과 협업
 
@@ -414,6 +414,7 @@ Spark 시제품은 foreachBatch에서 이벤트의 종류·버전·필수 ID를 
 | [비동기 작업·복구](docs/prototype-pipeline.md) | 작업 API·Outbox·Kafka·1분 집계·중단 복구 |
 | [project 구현 요약](docs/instructor-requirements.md) | 수집·처리·재전송·복구·최적화의 구현 근거 |
 | [스트리밍 처리 명세](docs/streaming-semantics.md) | Kafka 토픽·키, Spark 소비·집계·체크포인트, 누락 재처리 |
+| [메인 AWS 서버](server/README.md) | EC2 배포, FastAPI부터 MongoDB까지의 처리, Kafka 수신 캡처, 누락 복구 |
 | [아키텍처](docs/architecture.md) | 앱 추론·수집·계정 간 연결·설계 판단 |
 | [앱 엔진](docs/app-engine.md) | 좌표 슬롯·전처리 수식·좌우 보완·기준값 재검증 |
 | [앱 담당자 확인 결과](docs/app-status.md) | 최신 빌드·재전송 확인, 동의·수집 범위, 기기 값, 앱 묶음 정리, 보안 점검 |
